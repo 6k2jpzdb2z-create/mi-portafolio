@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio web personal de Rachelis Zapata Perez, estudiante de Informática y futura maestra de Educación Primaria. Creatividad, tecnología y sueños por construir.">
+  <meta name="keywords" content="Rachelis Zapata Perez, portafolio, informática, desarrollo web, HTML, CSS, JavaScript, educación primaria, República Dominicana">
+  <meta name="author" content="Rachelis Zapata Perez">
+  <title>Rachelis Zapata Perez | Portafolio Personal</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg fixed-top" aria-label="Navegación principal">
+    <div class="container">
+      <a class="navbar-brand" href="#inicio">Rachelis <span>Zapata</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#formacion">Formación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#metas">Metas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <li class="nav-item ms-lg-3">
+            <button class="theme-btn" id="themeToggle" aria-label="Cambiar modo claro u oscuro">
+              <i class="fas fa-moon" id="themeIcon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= INICIO / HERO ================= -->
+  <header class="hero" id="inicio">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5 text-center text-lg-start">
+          <div class="hero-photo-wrap">
+            <img
+              src="https://i.postimg.cc/c1Fr8M73/cheli-jpg.jpg"
+              alt="Fotografía de Rachelis Zapata Perez"
+              class="hero-img"
+              loading="eager">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <span class="hero-badge"><i class="fas fa-star me-2"></i>Portafolio Personal</span>
+          <h1 class="hero-title">Rachelis Zapata Perez</h1>
+          <p class="hero-tagline">Creatividad, tecnología y sueños por construir</p>
+          <p class="hero-lead">
+            Estudiante de Informática de 16 años, apasionada por el diseño, la programación
+            y la educación. Mi sueño es convertirme en maestra de Educación Primaria
+            y aportar cosas positivas a la sociedad. 🚀
+          </p>
+          <div class="hero-actions">
+            <a href="#sobre-mi" class="btn btn-hero-primary">
+              <i class="fas fa-user me-2"></i>Conóceme
+            </a>
+            <a href="#proyectos" class="btn btn-hero-outline">
+              <i class="fas fa-code me-2"></i>Ver Proyectos
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= SOBRE MÍ ================= -->
+  <section class="py-5" id="sobre-mi" aria-label="Sobre mí">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9 text-center">
+          <span class="section-eyebrow">Quién soy</span>
+          <h2 class="section-title"><i class="fas fa-user"></i>Sobre Mí</h2>
+          <p class="section-lead">
+            Mi nombre es Rachelis Zapata Perez. Soy estudiante de Informática y me considero
+            una persona creativa, responsable, soñadora y con deseos de superación. 📸
+          </p>
+          <p class="section-text">
+            Me interesa la tecnología, el diseño, la programación y el aprendizaje de nuevas
+            herramientas digitales. Me gusta desarrollar ideas, trabajar en proyectos y adquirir
+            conocimientos que contribuyan a mi crecimiento personal y profesional.
+          </p>
+          <p class="section-text">
+            También tengo una gran pasión por la educación. Uno de mis mayores sueños es
+            convertirme en maestra de Educación Primaria, especialmente del Primer Ciclo.
+            Soy cristiana y mi fe en Dios es una parte importante de mi vida. Disfruto cantar,
+            escuchar música, leer, compartir con mi familia y disfrutar de la naturaleza.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-4">
+        <div class="col-md-4">
+          <div class="feature-card h-100">
+            <div class="feature-icon"><i class="fas fa-laptop-code"></i></div>
+            <h5>Tecnología y Diseño</h5>
+            <p>Me apasiona crear interfaces, aprender programación y explorar nuevas herramientas digitales.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card h-100">
+            <div class="feature-icon"><i class="fas fa-users"></i></div>
+            <h5>Fe y Comunidad</h5>
+            <p>Soy cristiana y líder de jóvenes. Disfruto compartir, cantar y crecer junto a mi comunidad.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card h-100">
+            <div class="feature-icon"><i class="fas fa-bullseye"></i></div>
+            <h5>Educación</h5>
+            <p>Mi meta es enseñar y orientar a los niños y niñas como maestra de Educación Primaria.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HABILIDADES ================= -->
+  <section class="py-5 section-soft" id="habilidades" aria-label="Mis habilidades">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-eyebrow">Lo que estoy aprendiendo</span>
+        <h2 class="section-title"><i class="fas fa-lightbulb"></i>Mis Habilidades</h2>
+        <p class="section-text section-text-narrow mx-auto">
+          Estas son las herramientas y capacidades que desarrollo en mi formación técnica
+          en Informática. Sigo aprendiendo cada día.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <div class="skill-card">
+            <i class="fab fa-html5"></i>
+            <h6>HTML</h6>
+            <span>Estructura web</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="skill-card">
+            <i class="fab fa-css3-alt"></i>
+            <h6>CSS</h6>
+            <span>Estilos y diseño</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="skill-card">
+            <i class="fab fa-js"></i>
+            <h6>JavaScript</h6>
+            <span>Interactividad</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="skill-card">
+            <i class="fab fa-bootstrap"></i>
+            <h6>Bootstrap</h6>
+            <span>Diseño responsive</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="skill-card">
+            <i class="fas fa-pen-ruler"></i>
+            <h6>Diseño UI</h6>
+            <span>Interfaces</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="skill-card">
+            <i class="fas fa-computer"></i>
+            <h6>Herramientas</h6>
+            <span>Ofimática</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="skill-card">
+            <i class="fas fa-people-group"></i>
+            <h6>Trabajo en equipo</h6>
+            <span>Colaboración</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="skill-card">
+            <i class="fas fa-seedling"></i>
+            <h6>Aprendizaje</h6>
+            <span>Continuo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROYECTOS ================= -->
+  <section class="py-5" id="proyectos" aria-label="Mis proyectos">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-eyebrow">Mi trabajo</span>
+        <h2 class="section-title"><i class="fas fa-project-diagram"></i>Mis Proyectos</h2>
+        <p class="section-text section-text-narrow mx-auto">
+          Espacio reservado para mis proyectos académicos de informática, diseño web,
+          aplicaciones y sistemas. Aquí iré publicando mis trabajos reales.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <article class="card project-card h-100">
+            <div class="project-img-wrap">
+              <img src="https://www.tucanit.com/wp-content/uploads/2021/10/almadraba.jpg" class="card-img-top" alt="Proyecto de diseño web" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="project-tag">Diseño Web</span>
+              <h5 class="card-title">Proyecto de Página Web</h5>
+              <p class="card-text">Desarrollo de una página web con HTML, CSS y Bootstrap aplicando diseño responsive.</p>
+              <span class="project-status"><i class="fas fa-hourglass-half me-1"></i>Próximamente</span>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="card project-card h-100">
+            <div class="project-img-wrap">
+              <img src="https://www.tucanit.com/wp-content/uploads/2021/10/oficina.jpg" class="card-img-top" alt="Proyecto de aplicación informática" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="project-tag">Aplicación</span>
+              <h5 class="card-title">Proyecto de Aplicación</h5>
+              <p class="card-text">Creación de una aplicación informática como parte de mi formación técnica en Informática.</p>
+              <span class="project-status"><i class="fas fa-hourglass-half me-1"></i>Próximamente</span>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="card project-card h-100">
+            <div class="project-img-wrap">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMIjzhc7m8zFXXhW09E_ZnBNVNRCAwdKZHAQ&s" class="card-img-top" alt="Proyecto de sistema informático" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="project-tag">Sistema</span>
+              <h5 class="card-title">Proyecto de Sistema</h5>
+              <p class="card-text">Diseño y desarrollo de un sistema como práctica de mis estudios en Informática.</p>
+              <span class="project-status"><i class="fas fa-hourglass-half me-1"></i>Próximamente</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FORMACIÓN ================= -->
+  <section class="py-5 section-soft" id="formacion" aria-label="Mi formación académica">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-eyebrow">Mi trayectoria</span>
+        <h2 class="section-title"><i class="fas fa-graduation-cap"></i>Mi Formación</h2>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"><i class="fas fa-school"></i></div>
+              <div class="timeline-content">
+                <h5>Educación Primaria y Secundaria</h5>
+                <p class="timeline-meta">Formación básica</p>
+                <p>Etapa de formación escolar donde desarrollé las bases de mi aprendizaje, disciplina y valores.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"><i class="fas fa-laptop-code"></i></div>
+              <div class="timeline-content">
+                <h5>Sexto de Secundaria — Área Técnica: Informática</h5>
+                <p class="timeline-meta">Actualidad</p>
+                <p>Actualmente curso el sexto de secundaria en el área técnica de Informática, donde aprendo programación, diseño web y manejo de herramientas digitales.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"><i class="fas fa-certificate"></i></div>
+              <div class="timeline-content">
+                <h5>Bachillerato Técnico en Diseño y Desarrollo de Aplicaciones Informáticas</h5>
+                <p class="timeline-meta">Especialidad técnica</p>
+                <p>Especialidad enfocada en el diseño y desarrollo de aplicaciones informáticas, combinando creatividad y tecnología.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= METAS ================= -->
+  <section class="py-5" id="metas" aria-label="Mis metas profesionales">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-eyebrow">Mis sueños</span>
+        <h2 class="section-title"><i class="fas fa-bullseye"></i>Mis Metas Profesionales</h2>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card experience-card h-100">
+            <div class="card-body">
+              <div class="experience-icon"><i class="fas fa-graduation-cap"></i></div>
+              <h5 class="card-title">Continuar mis estudios</h5>
+              <p class="card-text">Seguir preparándome académicamente para alcanzar mis metas y desarrollarme como profesional.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card experience-card h-100">
+            <div class="card-body">
+              <div class="experience-icon"><i class="fas fa-chalkboard-user"></i></div>
+              <h5 class="card-title">Ser maestra de Primaria</h5>
+              <p class="card-text">Mi mayor sueño es convertirme en maestra de Educación Primaria, especialmente del Primer Ciclo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card experience-card h-100">
+            <div class="card-body">
+              <div class="experience-icon"><i class="fas fa-hand-holding-heart"></i></div>
+              <h5 class="card-title">Aportar a la sociedad</h5>
+              <p class="card-text">Enseñar, orientar y contribuir al aprendizaje de los niños y niñas, aportando cosas positivas a la sociedad.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACTO ================= -->
+  <section class="py-5 section-soft" id="contacto" aria-label="Contacto">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-eyebrow">Hablemos</span>
+        <h2 class="section-title"><i class="fas fa-envelope"></i>Contacto</h2>
+        <p class="section-text section-text-narrow mx-auto">
+          ¿Quieres conocer más sobre mí o mi trabajo? Escríbeme, me encantará saber de ti.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="contact-card">
+            <form id="contactForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="nombre" class="form-label">Nombre completo</label>
+                  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                  <div class="invalid-feedback">Por favor escribe tu nombre.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Correo electrónico</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                  <div class="invalid-feedback">Por favor escribe un correo válido.</div>
+                </div>
+                <div class="col-12">
+                  <label for="mensaje" class="form-label">Mensaje</label>
+                  <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                  <div class="invalid-feedback">Por favor escribe tu mensaje.</div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary w-100">
+                    <i class="fas fa-paper-plane me-2"></i>Enviar Mensaje
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col text-center">
+          <h5 class="social-title">Conéctate en Redes</h5>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="py-4 text-center">
+    <div class="container">
+      <p class="mb-0">
+        © 2025 Rachelis Zapata Perez — Hecho con <i class="fas fa-heart"></i> y mucha fe.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
